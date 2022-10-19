@@ -25,7 +25,7 @@ const FINAL_LEVEL = 10;
 const PILL_POINTS = 10;
 const POWERPILL_POINTS = 50;
 const GHOST_POINTS = 100;
-const HIGHSCORE_ENABLED = true;
+const HIGHSCORE_ENABLED = false;  // disattiva gli high score
 
 
 function geronimo() {
@@ -286,7 +286,8 @@ function geronimo() {
 		};
 
 		this.newGame = function () {
-			var r = confirm("Are you sure you want to restart?");
+			//var r = confirm("Are you sure you want to restart?");
+			var r = true;
 			if (r) {
 				console.log("new Game");
 				this.init(0);
